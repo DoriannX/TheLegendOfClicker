@@ -17,14 +17,14 @@ public class GameManager : MonoBehaviour
         Timer -= Time.deltaTime;
         TimerText.text = ("time left = " + RoundedTimer.ToString() + "sec");
         ScoreText.text = ("Score = " + Score);
-        if (Timer < 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            Destroy(Button);
-        }
         if (Score >= 25)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Destroy(Button);
+        }
+        else if (Timer < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             Destroy(Button);
         }
     }
