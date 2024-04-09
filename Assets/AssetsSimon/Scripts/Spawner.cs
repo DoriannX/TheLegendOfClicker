@@ -1,6 +1,7 @@
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
@@ -44,11 +45,11 @@ public class Spawner : MonoBehaviour
     {
         if (score >= quota)
         {
-            Debug.Log("You Win");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if (timer <= 0)
         {
-            Debug.Log("You Lose");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 
