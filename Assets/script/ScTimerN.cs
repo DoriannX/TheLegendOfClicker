@@ -32,8 +32,7 @@ public class ScTimerN : MonoBehaviour{
             timeText.text = seconds + "." + miniSeconds;
             timerBar.fillAmount = _timeRemain / maxTime;
         } else{
-            end.SetActive(true);
-            Time.timeScale = 0f;
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 

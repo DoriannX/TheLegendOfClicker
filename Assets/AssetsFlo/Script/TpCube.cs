@@ -18,8 +18,8 @@ public class TpCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    intTimer = Mathf.RoundToInt(Timer);
-    intTimerlose = Mathf.RoundToInt(TimerLose);
+        intTimer = Mathf.RoundToInt(Timer);
+        intTimerlose = Mathf.RoundToInt(TimerLose);
         TimerText.text = (intTimer + "s restant");
         TimerLoseText.text = (intTimerlose + "s survived");
         Timer -= Time.deltaTime;

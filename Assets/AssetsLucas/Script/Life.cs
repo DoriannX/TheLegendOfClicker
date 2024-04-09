@@ -19,7 +19,6 @@ public class Life : MonoBehaviour
         if (_nbLife <= 0 )
         {
             RandomPos.instance._uiGameOver.SetActive(true);
-            Time.timeScale = 0.0f;
         }
         for (int i = 0; i < _imageHeart.Count - _nbLife; i++)
         {
