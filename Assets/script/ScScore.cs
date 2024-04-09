@@ -8,7 +8,6 @@ public class ScScore : MonoBehaviour
     public int score;
 
     [SerializeField]private TextMeshProUGUI scoreAmount;
-    [SerializeField]private TextMeshProUGUI finalScoreAmount;
 
     public static ScScore Instance;
 
@@ -27,12 +26,11 @@ public class ScScore : MonoBehaviour
     private void Start()
     {
         score = 0;
-        scoreAmount.text = score.ToString();
+        scoreAmount.text = score.ToString() + " / 15";
     }
 
     private void Update()
     {
-        scoreAmount.text = score.ToString();
-        finalScoreAmount.text = "Final Score : " + scoreAmount.text;
+        scoreAmount.text = score.ToString()+ " / 15";
     }
 }
