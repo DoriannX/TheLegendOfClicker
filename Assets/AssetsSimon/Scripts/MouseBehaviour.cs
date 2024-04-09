@@ -1,20 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseBehaviour : MonoBehaviour
 {
+    private Spawner spawner;
+
+    private void Start()
+    {
+        spawner = Spawner.instance;
+    }
+
     void Update()
     {
-        Vector2 mousePos = Input.mousePosition;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f));
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-            Debug.Log(Physics.Raycast(new Vector3(mousePos.x, mousePos.y, -100), Vector3.forward, Mathf.Infinity));
-            if (Physics.Raycast(new Vector3 (mousePos.x, mousePos.y, -100), Vector3.forward, out hit, Mathf.Infinity))
+            if (mousePos.x < spawner.GetTarget().transform.position.x + 2 && mousePos.x > spawner.GetTarget().transform.position.x - 2 && mousePos.y < spawner.GetTarget().transform.position.y + 2 && mousePos.y > spawner.GetTarget().transform.position.y - 2)
             {
-                Debug.Log(mousePos);
-                Destroy(hit.collider.gameObject);
+                Destroy(spawner.GetTarget());
+                spawner.IncrementScore();
             }
         }
     }
