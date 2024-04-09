@@ -35,11 +35,11 @@ public class S_Button : MonoBehaviour
         updateLives();
     }
 
-    private IEnumerator End()
+   /* private IEnumerator End()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
+
+    }*/
     // Update is called once per frame
     void Update()
     {
@@ -54,8 +54,9 @@ public class S_Button : MonoBehaviour
             {
                 gameOver.gameObject.SetActive(true);
                 gameObject.SetActive(false);
-                End();
-                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+
             }
         }
         
