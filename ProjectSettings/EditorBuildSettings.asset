@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Aurelien.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Baptiste_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Raphael.unity
     guid: bbb2cf08e399a744881c536104725765
   - enabled: 1
     path: Assets/Scenes/SceneLukaB.unity
@@ -24,13 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Thomas.unity
     guid: 42ab76f58f7952a44879b205940e1076
   - enabled: 1
-    path: Assets/Scenes/Nolan.unity
+    path: Assets/Scenes/Nohlan.unity
     guid: 04bae3cd8ed8831489f575536d7a6535
   - enabled: 1
-    path: Assets/AssetsDorian/Scenes/Dorian.unity
+    path: Assets/AssetsDorian/Scenes/Doriann.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/AssetsDorian/AssetsGab/Assets/Scenes/DragonCaveScene.unity
+    path: Assets/AssetsDorian/AssetsGab/Assets/Scenes/Gabriel.unity
     guid: 018c21ce7d2e1844bb29f563d90e48aa
   - enabled: 1
     path: Assets/AssetsDorian/AssetsJSP/Scenes/JeuNathan.unity
@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AssetsMateo/Scenes/Mateo.unity
     guid: 4b77abb5b6003974cb6619827ab4c682
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsFlo/Scenes/Florian.unity
     guid: 0c09b01ba4fc2f54d881e67af1903cc8
   - enabled: 1
