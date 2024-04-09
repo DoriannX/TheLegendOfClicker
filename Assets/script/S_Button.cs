@@ -35,7 +35,7 @@ public class S_Button : MonoBehaviour
         updateLives();
     }
 
-    private IEnumerator end()
+    private IEnumerator End()
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
@@ -54,6 +54,7 @@ public class S_Button : MonoBehaviour
             {
                 gameOver.gameObject.SetActive(true);
                 gameObject.SetActive(false);
+                End();
                 
             }
         }
