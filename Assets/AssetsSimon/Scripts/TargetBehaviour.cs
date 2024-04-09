@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetBehaviour : MonoBehaviour
 {
     [SerializeField] private float timeLimit;
     private float timer;
+    private Spawner spawner;
 
     private void Start()
     {
+        spawner = Spawner.instance;
         timer = 0;
     }
 
