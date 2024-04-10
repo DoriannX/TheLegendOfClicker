@@ -8,22 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aurelien.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Baptiste_Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Raphael.unity
     guid: bbb2cf08e399a744881c536104725765
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneLukaB.unity
     guid: a0ddbbc30fb8946468571327028271b5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Thomas.unity
     guid: 42ab76f58f7952a44879b205940e1076
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nohlan.unity
     guid: 04bae3cd8ed8831489f575536d7a6535
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsDorian/Scenes/Doriann.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
