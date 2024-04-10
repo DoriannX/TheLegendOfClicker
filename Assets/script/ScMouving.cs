@@ -9,5 +9,6 @@ public class ScMouving : MonoBehaviour
         transform.position = new Vector2(Random.Range(128, 1792), Random.Range(128, 752));
         ScScore.Instance.score += 1;
         ScTimer.Instance.time += 6;
+        GainXP.instance.GainEXP();
     }
 }
