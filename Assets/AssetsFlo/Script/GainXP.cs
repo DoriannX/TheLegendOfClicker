@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,9 @@ public class GainXP : MonoBehaviour
     [SerializeField] private int _requireXP;
     [SerializeField] private int _gainXP;
 
+   [SerializeField] private TextMeshProUGUI _lvl;
+   [SerializeField] private TextMeshProUGUI _exp;
+
 
     public static GainXP instance;
     // Start is called before the first frame update
@@ -26,13 +30,19 @@ public class GainXP : MonoBehaviour
             instance = this;
         }
         DontDestroyOnLoad(gameObject);
+
+        UpdateText();
     }
 
     public void GainEXP()
     {
         _currentXP += _gainXP + SceneManager.GetActiveScene().buildIndex;
         if (_currentXP >= _requireXP)
+        {
             LevelUP();
+        }
+        UpdateText();
+
     }
 
     public void LevelUP()
@@ -41,5 +51,13 @@ public class GainXP : MonoBehaviour
         _requireXP = _requireXP + 20;
         _gainXP = _gainXP + 2;
         _currentXP = 0;
+        
     }
+
+    private void UpdateText()
+    {
+        _exp.text = ("XP: " + _currentXP.ToString() + "/" + _requireXP.ToString());
+        _lvl.text = ("Level: " + _level.ToString());
+    }
+
 }
