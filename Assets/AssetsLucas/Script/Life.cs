@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Life : MonoBehaviour
@@ -18,8 +19,7 @@ public class Life : MonoBehaviour
         _nbLife--;
         if (_nbLife <= 0 )
         {
-            RandomPos.instance._uiGameOver.SetActive(true);
-            Time.timeScale = 0.0f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
         for (int i = 0; i < _imageHeart.Count - _nbLife; i++)
         {

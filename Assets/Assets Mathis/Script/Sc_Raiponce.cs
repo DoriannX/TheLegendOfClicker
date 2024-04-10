@@ -44,7 +44,6 @@ public class Sc_Raiponce : MonoBehaviour
     {
         if (numClick >= _hairImages.Count - 1)
         {
-            Time.timeScale = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
@@ -57,7 +56,6 @@ public class Sc_Raiponce : MonoBehaviour
 
     private void Defeat()
     {
-        Time.timeScale = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
