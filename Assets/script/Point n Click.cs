@@ -28,6 +28,7 @@ public class PointnClick : MonoBehaviour
             if(Input.GetMouseButtonDown(0) && results[0].gameObject.CompareTag(cibleTag))
             {
                 Destroy(results[0].gameObject);
+                GainXP.instance.GainEXP();
                 TargetSpawner.SpawnTarget();
                 healthManager.AddTime(0.4f);
                 healthManager.AddScore();
