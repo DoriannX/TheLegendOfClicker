@@ -68,6 +68,7 @@ public class S_Button : MonoBehaviour
         newBrume.GetComponent<S_brume>().m_heartStock=stock;
         timer = 0;
         nb_score++;
+        GainXP.instance.GainEXP();
         updateScore();
     }
     private void updateLives()
