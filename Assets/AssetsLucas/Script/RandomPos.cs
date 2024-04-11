@@ -51,6 +51,7 @@ public class RandomPos : MonoBehaviour
     {
         if (canClick )
         {
+            GainXP.instance.GainEXP();
             canClick = false;
             _score++;
             if (_score >= _scoreMax)
