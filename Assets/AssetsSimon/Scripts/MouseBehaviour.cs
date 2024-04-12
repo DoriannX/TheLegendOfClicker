@@ -18,6 +18,7 @@ public class MouseBehaviour : MonoBehaviour
             {
                 Destroy(spawner.GetTarget());
                 spawner.IncrementScore();
+                GainXP.instance.GainEXP();
             }
         }
     }
