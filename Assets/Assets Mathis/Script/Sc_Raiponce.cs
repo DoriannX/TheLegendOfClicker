@@ -33,6 +33,7 @@ public class Sc_Raiponce : MonoBehaviour
     private IEnumerator AddHair()
     {
         numClick++;
+        GainXP.instance.GainEXP();
         _hairImages[numClick].GetComponent<UnityEngine.UI.Image>().color = new Color32(255, 255, 255, 255);
         Victory();
         Aura.SetActive(true);
