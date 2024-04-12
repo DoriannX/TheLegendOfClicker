@@ -34,12 +34,12 @@ public class CB_CubeManager : MonoBehaviour
         timeCoolDown = timer;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (timeCoolDown < 0)
         {
             Spawn(); 
-            timeCoolDown = timer;
+            timeCoolDown = timer - 0.1f;
         }
         else
         {
@@ -51,7 +51,7 @@ public class CB_CubeManager : MonoBehaviour
     {
         for (int i = 0; i < numberOfCube; i++)
         {
-            Vector2 pos = new Vector2(Random.Range(64, canvas.transform.position.x-64), Random.Range(64, canvas.transform.position.y-64));
+            Vector2 pos = new Vector2(Random.Range(64, canvas.GetComponent<RectTransform>().sizeDelta.x -64), Random.Range(64, canvas.GetComponent<RectTransform>().sizeDelta.y - 64));
             GameObject obj = Instantiate(cube, pos, Quaternion.identity);
             obj.transform.SetParent(canvas.transform);
         }
