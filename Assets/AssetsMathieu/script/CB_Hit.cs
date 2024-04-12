@@ -49,6 +49,7 @@ public class CB_Hit : MonoBehaviour
             index++;
             gameObject.GetComponent<Image>().sprite = spriteColor[index];
             gameObject.GetComponent<Image>().SetNativeSize();
+            GainXP.instance.GainEXP();
 
         }
 
