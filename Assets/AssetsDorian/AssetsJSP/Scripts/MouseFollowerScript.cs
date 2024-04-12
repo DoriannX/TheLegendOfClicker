@@ -62,6 +62,7 @@ public class MouseFollowerScript : MonoBehaviour
     {
         Vector3 randomPosition = new Vector3(Random.Range(8, -8), Random.Range(4, -4), 0);
         dakube.transform.position = randomPosition;
+        GainXP.instance.GainEXP();
     }
 
     private int SelectRandomSprite()
