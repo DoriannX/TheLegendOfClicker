@@ -15,7 +15,7 @@ public class WinCondition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.localScale.x >= 15)
+        if (transform.localScale.x >= 10)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

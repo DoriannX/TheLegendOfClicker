@@ -68,6 +68,7 @@ public class GameManagerDragonCave : MonoBehaviour
         SpawnCube(Vector2.zero);
         Score++;
         SoundManager.Instance.PlayAtPath("ping");
+        GainXP.instance.GainEXP();
     }
 
     public void SpawnCube(Vector2 pos)

@@ -30,7 +30,7 @@ public class MovManager : MonoBehaviour
 
     public void Spawn()
     {
-        Vector3 position = new Vector3(Random.Range(-600f, 600f), Random.Range(-600f, 600f), 0);
+        Vector3 position = new Vector3(Random.Range(-500f, 500f), Random.Range(-500f, 500f), 0);
         GameObject cube = Instantiate(cubePrefab, position, Quaternion.identity);
         cube.transform.SetParent(parentCanvas, false);
 
@@ -41,7 +41,7 @@ public class MovManager : MonoBehaviour
 
     IEnumerator ClickTimer(GameObject cube)
     {
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(1f);
         Remove(cube);
 
         life--;

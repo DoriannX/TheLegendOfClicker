@@ -7,5 +7,6 @@ public class spawnCubeScript : MonoBehaviour
     public void spawnCube()
     {
         MovManager.instance.Remove(gameObject);
+        Score.instance.scoreValue++;
     }
 }

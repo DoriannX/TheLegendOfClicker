@@ -28,6 +28,7 @@ public class S_Covid : MonoBehaviour
     {
         if (m_lives > 0)
         {
+            GainXP.instance.GainEXP();
             m_maxcooldown *= 0.90f;
             m_cooldown = m_maxcooldown;
             transform.position = new Vector3(Random.Range(128, 1920 - 129), Random.Range(128, 1080 - 129), 0);

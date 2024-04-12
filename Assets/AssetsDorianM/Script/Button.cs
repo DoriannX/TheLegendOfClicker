@@ -10,6 +10,7 @@ public class Button : MonoBehaviour
     }
     public void MoveButton()
     {
+        GainXP.instance.GainEXP();
         Instantiate(Anim, transform.position,Quaternion.identity);
         transform.localPosition = new Vector3(Random.Range(-896, 896), Random.Range(-476, 476),transform.localPosition.z);
         GameManager.GetComponent<GameManager>().Score++;

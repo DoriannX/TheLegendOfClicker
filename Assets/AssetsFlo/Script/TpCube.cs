@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TpCube : MonoBehaviour
 {
-
+    
     [SerializeField] private float Timer;
     private float TimerLose;
     [SerializeField] private float Addtime;
@@ -18,8 +18,8 @@ public class TpCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    intTimer = Mathf.RoundToInt(Timer);
-    intTimerlose = Mathf.RoundToInt(TimerLose);
+        intTimer = Mathf.RoundToInt(Timer);
+        intTimerlose = Mathf.RoundToInt(TimerLose);
         TimerText.text = (intTimer + "s restant");
         TimerLoseText.text = (intTimerlose + "s survived");
         Timer -= Time.deltaTime;
@@ -42,5 +42,6 @@ public class TpCube : MonoBehaviour
     {
         transform.localPosition = new Vector3(Random.Range(-283, 283), Random.Range(-131,131), (transform.localPosition.z));
         Timer += Addtime;
+        GainXP.instance.GainEXP();
     }
 }

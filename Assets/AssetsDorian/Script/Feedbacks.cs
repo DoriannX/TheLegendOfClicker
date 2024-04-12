@@ -46,7 +46,7 @@ public class Feedbacks : MonoBehaviour
                 _square.transform.localScale = _scale;
                 _isShrinkingAndChangingColor = false;
                 _elapsed = 0;
-                _transform.localPosition = new Vector3(Random.Range(-Screen.width / 2, Screen.height / 2), Random.Range(-Screen.height / 2, Screen.height / 2));
+                _transform.localPosition = new Vector3(Random.Range(-1920 / 2, 1920 / 2), Random.Range(-1080 / 2, 1080 / 2));
                 _image.sprite = SpritesManager.Instance.ChoseOneSprite();
                 _squareImage.color = _baseColor;
             }
