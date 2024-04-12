@@ -121,5 +121,6 @@ public class ButtonCustom : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void AddPoint()
     {
         _point++;
+        GainXP.instance.GainEXP();
     }
 }
