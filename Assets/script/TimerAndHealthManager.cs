@@ -34,7 +34,7 @@ public class TimerAndHealthManager : MonoBehaviour
         scoreText.text = "Score : " + score + " / 10";
         if (score == 10)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
