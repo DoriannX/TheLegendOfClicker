@@ -26,28 +26,28 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AssetsDorian/Scenes/Doriann.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsDorian/AssetsGab/Assets/Scenes/Gabriel.unity
     guid: 018c21ce7d2e1844bb29f563d90e48aa
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsDorian/AssetsJSP/Scenes/JeuNathan.unity
     guid: fd8cc89fed09fa74c9185a63c49871ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsDorian/Assets_louis/Assets/Scenes/SampleScene.unity
     guid: d04ada7db5ce930459cd88d5612cfaf8
   - enabled: 1
     path: Assets/AssetsMathieu/Scenes/Mathieu.unity
     guid: 12c17adab271288488bb6a3f2f85d7d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsLucas/Scenes/SceneLucasDarpeix.unity
     guid: 9e3f9c81f93a89d4c9d7060a44752484
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsDorianM/Scenes/DorianM.unity
     guid: f404cc93b68198247b1bac54b1fa284b
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsMateo/Scenes/Mateo.unity
     guid: 4b77abb5b6003974cb6619827ab4c682
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsFlo/Scenes/Florian.unity
     guid: 0c09b01ba4fc2f54d881e67af1903cc8
   - enabled: 1
