@@ -8,5 +8,6 @@ public class spawnCubeScript : MonoBehaviour
     {
         MovManager.instance.Remove(gameObject);
         Score.instance.scoreValue++;
+        GainXP.instance.GainEXP();
     }
 }
