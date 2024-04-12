@@ -57,7 +57,7 @@ public class S_Covid : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             m_retryButton.SetActive(true);
         }
     }

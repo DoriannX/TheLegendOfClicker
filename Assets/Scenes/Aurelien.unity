@@ -495,11 +495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 348813871757500393, guid: 774b7ffcd825a5e41b2e77b2178f27d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1600
+      value: 803
       objectReference: {fileID: 0}
     - target: {fileID: 348813871757500393, guid: 774b7ffcd825a5e41b2e77b2178f27d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1000
+      value: 464
       objectReference: {fileID: 0}
     - target: {fileID: 348813871757500393, guid: 774b7ffcd825a5e41b2e77b2178f27d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1035,7 +1035,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 21
+  m_SortingOrder: 10604
   m_TargetDisplay: 0
 --- !u!1 &1545837332
 GameObject:
@@ -1071,7 +1071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.6989, y: 0.0001}
+  m_AnchoredPosition: {x: 1.6988525, y: 0.00012207031}
   m_SizeDelta: {x: 44.1097, y: 40.7125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545837334
