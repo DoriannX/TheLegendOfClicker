@@ -17,7 +17,6 @@ public class ClickOnSquare : MonoBehaviour
     public static ClickOnSquare Instance;
 
     [SerializeField] TextMeshProUGUI _healthText;
-    [SerializeField] TextMeshProUGUI _scoreText;
     [SerializeField] GameObject _loseText;
     [SerializeField] GameObject _hurtImage;
 
@@ -48,6 +47,7 @@ public class ClickOnSquare : MonoBehaviour
         {
             _image.sprite = SpritesManager.Instance.ChoseOneBrokenSprite();
             Feedbacks.Instance.StartShrink(gameObject);
+            GainXP.instance.GainEXP();
             _count++;
             if(_count >= 10)
             {
@@ -92,7 +92,6 @@ public class ClickOnSquare : MonoBehaviour
     private void UpdateUI()
     {
         _healthText.text = _health.ToString();
-        _scoreText.text = _count.ToString();
     }
 
     IEnumerator Hurt()
