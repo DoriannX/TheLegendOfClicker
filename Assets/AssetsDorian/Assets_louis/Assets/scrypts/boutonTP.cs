@@ -39,6 +39,7 @@ public class boutonTP : MonoBehaviour
     {
         transform.localPosition = new Vector3(Random.Range(-897, 897), Random.Range(-477, 477), transform.localPosition.z);
         Timer += addToTimer;
+        GainXP.instance.GainEXP();
         FindObjectOfType<AudioManager>().PlaySound("buttonPressed");
     }
 
